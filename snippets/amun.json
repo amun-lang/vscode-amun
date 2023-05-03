@@ -1,0 +1,32 @@
+{
+    "Prefix operator overloading": {
+        "scope": "amun",
+        "prefix": "prefix operator",
+        "body": [
+            "@prefix operator $1 (f $2) $3 {",
+            "    $0",
+            "}"
+        ],
+        "description": "Prefix operator overloading function desclaraion"
+    },
+    "Infix operator overloading": {
+        "scope": "amun",
+        "prefix": "infix operator",
+        "body": [
+            "@infix operator $1 (f $2, s $3) $4 {",
+            "    $0",
+            "}"
+        ],
+        "description": "Infix operator overloading function desclaraion"
+    },
+    "Postfix operator overloading": {
+        "scope": "amun",
+        "prefix": "postfix operator",
+        "body": [
+            "@postfix operator $1 (f $2) $3 {",
+            "    $0",
+            "}"
+        ],
+        "description": "Postfix operator overloading function desclaraion"
+    }
+}

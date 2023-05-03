@@ -42,7 +42,7 @@
     "snippets": [
       {
         "language": "amun",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/amun.json"
       }
     ]
   },
