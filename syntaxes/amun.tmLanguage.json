@@ -40,6 +40,22 @@
 							"match": "\\\\."
 						}
 					]
+				},
+				{
+					"name": "string.quoted.single.amun",
+					"begin": "\"",
+					"end": "\"",
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.end.quote.single.amun"
+						}
+					},
+					"patterns": [
+						{
+							"name": "constant.character.escape.amun",
+							"match": "\\\\."
+						}
+					]
 				}
 			]
 		},
