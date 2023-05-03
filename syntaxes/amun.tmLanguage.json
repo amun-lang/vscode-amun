@@ -13,6 +13,12 @@
 		},
 		{
 			"include": "#comment"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#operators"
 		}
 	],
 	"repository": {
@@ -20,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.amun",
-					"match": "\\b(var|const|load|import|type|if|else|fun|operator|cast|defer|switch|break|continue|varargs|void|true|false|null|for|while|struct|enum|return|value_size|type_size)\\b"
+					"match": "\\b(var|const|load|import|type|if|else|fun|operator|cast|defer|switch|break|continue|varargs|void|for|while|struct|enum|return|value_size|type_size)\\b"
 				},
 				{
 					"name": "keyword.types.amun",
@@ -69,6 +75,26 @@
 					},
 					"match": "(//).*$\\n?",
 					"name": "comment.line.double-slash.amun"
+				}
+			]
+		},
+		"constant": {
+			"match": "\\b(?:true|false|null)\\b",
+			"name": "constant.language.amun"
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.arithmetic.amun",
+					"match": "(\\+|\\-|\\*|\\/|\\^|\\~|\\%)(=)?"
+				},
+				{
+					"name": "keyword.operator.comparison.amun",
+					"match": "(((=|>|<)(=)?)|!=)"
+				},
+				{
+					"name": "keyword.operator.range.amun",
+					"match": "\\.\\."
 				}
 			]
 		}
