@@ -2,18 +2,28 @@
   "name": "amun",
   "displayName": "amun",
   "description": "Amun Programming Language support",
+  "icon": "media/logo.png",
   "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amrdeveloper/amun/tree/main/editors/vscode"
+    "url": "https://github.com/amun-lang/vscode-amun"
   },
   "publisher": "AmrDeveloper",
   "engines": {
     "vscode": "^1.63.0"
   },
-  "activationEvents": [],
-  "categories": [],
+  "activationEvents": [
+    "workspaceContains:**/*.amun"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Linters"
+  ],
+  "bugs": {
+    "url": "https://github.com/amun-lang/amun/issues"
+  },
   "main": "client/out/extension.js",
   "contributes": {
     "languages": [
@@ -26,8 +36,8 @@
           ".amun"
         ],
         "icon": {
-          "light": "./icons/logo.png",
-          "dark": "./icons/logo.png"
+          "light": "./media/logo.png",
+          "dark": "./media/logo.png"
         },
         "configuration": "./language-configuration.json"
       }
