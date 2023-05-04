@@ -97,6 +97,20 @@
 					},
 					"match": "(//).*$\\n?",
 					"name": "comment.line.double-slash.amun"
+				},
+				{
+					"name": "comment.block.amun",
+					"match": "/\\*\\*/"
+				},
+				{
+					"name": "comment.block.documentation.amun",
+					"begin": "/\\*",
+					"end": "\\*/",
+					"patterns": [
+						{
+							"include": "#comment"
+						}
+					]
 				}
 			]
 		},
