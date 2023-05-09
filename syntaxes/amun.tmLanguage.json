@@ -129,6 +129,10 @@
 					"match": "(((=|>|<)(=)?)|!=)"
 				},
 				{
+					"name": "keyword.operator.bitwise.amun",
+					"match": "(&|&&|\\||\\|\\|)(=)?"
+				},
+				{
 					"name": "keyword.operator.range.amun",
 					"match": "\\.\\."
 				}
